@@ -27,6 +27,29 @@
     button {
         background-color: #37006E;
         border: 1px solid #C684FF;
+
+
+        #name-typing {
+            font-size: 36px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .typing-cursor {
+            display: inline-block;
+            width: 10px;
+            height: 24px;
+            margin-left: 5px;
+            background-color: #FFFFFF;
+            animation: cursor 1s step-end infinite;
+        }
+
+        @keyframes cursor {
+            50% {
+                background-color: transparent;
+            }
+        }
     }
 </style>
 <!-- Wrapper -->
@@ -56,7 +79,7 @@
         </style>
         <div class="content">
             <div class="inner">
-                <h1 id="name-typing"></h1>
+                <h1>Sourabh Pandav</h1>
                 <p><span id="typing-text"></span></p>
                 <ul class="icons">
                     <li><a href="https://www.linkedin.com/in/sourabhpandav/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -238,17 +261,7 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
-    // Typing effect for your name
-    var name = "Sourabh Pandav";
-    var nameIndex = 0;
-    var nameInterval = setInterval(function () {
-        if (nameIndex < name.length) {
-            document.getElementById("name-typing").textContent += name[nameIndex];
-            nameIndex++;
-        } else {
-            clearInterval(nameInterval);
-        }
-    }, 100);
+    
 
     // Typing effect for your description
     var typedText = "Quantitative Research | Financial Analytics | Asset Management | Data Visualization | Risk Management | Financial Modelling";
