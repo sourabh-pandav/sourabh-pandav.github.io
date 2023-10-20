@@ -1,236 +1,266 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Sourabh Pandav</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<meta name="description" content="Personal Portfolio" />
-		<meta name="title" property="og:title" content="Personal Portfolio" />
-		<meta property="og:type" content="Personal Portfolio" />
-		<meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51835372328_6a9e4e82b4_.jpg" />
-		<meta name="description" property="og:description" content="Personal Portfolio" /><meta name="author" content="Sourabh Pandav" />
-	</head>
-	  <style>
+<head>
+    <title>Sourabh Pandav</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="title" property="og:title" content="Personal Portfolio" />
+    <meta property="og:type" content="Personal Portfolio" />
+    <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51835372328_6a9e4e82b4_.jpg" />
+    <meta name="description" property="og:description" content="Personal Portfolio" />
+    <meta name="author" content="Sourabh Pandav" />
+</head>
+<style>
     body {
-      background: radial-gradient(circle, #0A0A2A, #2A0A3A, #0A2A3A);
-      color: #FFFFFF;
-      font-family: Arial, sans-serif;
+        background: radial-gradient(circle, #0A0A2A, #2A0A3A, #0A2A3A);
+        color: #FFFFFF;
+        font-family: Arial, sans-serif;
     }
 
     h1, p, button {
-      color: #FFFFFF;
+        color: #FFFFFF;
     }
 
     button {
-      background-color: #37006E;
-      border: 1px solid #C684FF;
+        background-color: #37006E;
+        border: 1px solid #C684FF;
     }
-  </style>
+</style>
+<!-- Wrapper -->
+<div id="wrapper">
+    <div id="particles-js" style="height:100%; width:100%; position:absolute"></div>
+    <!-- Header -->
+    <header id="header">
+        <div class="logo" style="font-size: 40px;;">
+            <span class="fas fa-wave-square"></span>
+        </div>
+        <style>
+            .logo {
+                font-size: 40px;
+                transform: scaleX(-1) rotate(0deg);
+                animation: rotate 4s linear infinite;
+            }
 
+            @keyframes rotate {
+                0% {
+                    transform: scaleX(-1) rotate(0deg);
+                }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<div id="particles-js" style="height:100%; width:100%; position:absolute"></div>
-				<!-- Header -->
-					<header id="header">
-						<div class="logo" style="font-size: 40px;;">
-							<span class="fas fa-wave-square"></span>
-						</div>
-						<style>
-    						    .logo {
-        						font-size: 40px;
-        						transform: scaleX(-1) rotate(0deg);
-        						animation: rotate 4s linear infinite;
-    						    }
+                100% {
+                    transform: scaleX(-1) rotate(-360deg);
+                }
+            }
+        </style>
+        <div class="content">
+            <div class="inner">
+                <h1 id="name-typing"></h1>
+                <p><span id="typing-text"></span></p>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/sourabhpandav/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/sourabh-pandav" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#about">Edu</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!--<li><a href="#elements">Elements</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <!-- Main -->
+    <div id="main">
+        <!-- Intro -->
+        <article id="intro">
+            <h2 class="major">Introduction</h2>
+            <p>
+                I am an analytical professional with a finance background, specializing in financial analytics. My goal is to excel in the Financial Services and Investment Management sector as a dedicated Financial Analyst. I have a passion for simplifying complex technical concepts and conveying them to a non-technical audience. My expertise lies in analyzing company performance through techniques like Ratio Analysis, Statistical Modeling, and Quantitative Finance.
+            </p>
+            <p>
+                I bring hands-on experience in addressing various challenges in financial modeling, and I have a background in strategic planning, financial analysis, financial modeling, forecasting, and budgeting for operational efficiency. I am well-versed in advanced analytical tools, including statistical analysis, data visualization, and database management, ensuring regulatory compliance.
+            </p>
+            <p>
+                My interests span across traveling, cricket, and Progressive Pop music. Continuous learning is a source of immense pleasure for me, and I am committed to enhancing my quantitative and computational skills.
+            </p>
+            <p>
+                I am currently seeking opportunities for personal and organizational growth in the financial domain.
+            </p>
+        </article>
+        <!-- Work -->
+        <article id="work">
+            <h2 class="major">Work</h2>
+            <div>
+                <h4 style="float:left">Financial Data Analyst - Research Assistantship<br />Stevens Institute of Technology</h4>
+                <h4 style="float:right">May 2022 - May 2023</h4>
+            </div>
+            <ul style="clear:both;">
+                <li>
+                    Collected financial data from Bloomberg Terminal, tracking insider holdings and transactions of 50,000+ investors, for endowment fund strategies evaluating 3,000 US-listed companies' equity holdings, for informed investment decisions.
+                </li>
+                <li>
+                    Led a 30-member team in market trend research, analyzing GDP, CPI, and key economic indicators. Leveraged Python and Power BI for risk assessments through scenario analysis, achieving a 20% increase in efficiency.
+                </li>
+                <li>
+                    Spearheaded statistical analysis, uncovering correlations between revenue trends, expense forecasting, and cost overruns. Used multi-variable regression models in Excel, resulting in a notable 10% forecasting accuracy improvement.
+                </li>
+            </ul>
+            <div>
+                <h4 style="float:left">Operations Analyst<br />Paytaan Retail & Wholesale Pvt. Ltd</h4>
+                <h4 style="float:right">June 2019 - July 2021</h4>
+            </div>
+            <ul style="clear:both;">
+                <li>
+                    Executed strategic planning to optimize logistics, pricing strategies, transactions and streamlined stock ordering processes resulting in 20% revenue increase and 30% reduction in stock shortages.
+                </li>
+                <li>
+                    Conducted accounting audits on Zoho Books ERP inventory systems to achieve a 20% reduction in errors, increasing accuracy in financial planning, resulting in cost benefits and process improvement by mitigating stockouts and returns.
+                </li>
+                <li>
+                    Improved cross-functional stock and business processes recommendations, realizing a 15% efficiency boost through strategic deadstock sales and resource allocation optimization with SQL.
+                </li>
+                <li>
+                    Coordinated daily with 10+ vendors for on-time delivery of specified compliance products, increasing scalability.
+                </li>
+            </ul>
+        </article>
+        <!-- About -->
+        <article id="about">
+            <h2 class="major">Education</h2>
+            <div>
+                <h4 style="float:left;">Stevens Institute of Technology<br />Master of Science in Finance (Financial Services Analytics)</h4>
+                <h4 style="float:right;">August 2021 - May 2023</h4>
+            </div>
+            <p style="clear:both;">
+                <i><b>Relevant Coursework:</b></i> Financial Statement Analysis, Mergers Acquisitions, Corporate Restructuring, Econometrics, Corporate Finance, Fixed Income, Investment Management, Derivatives, Investment Banking, Financial Technology, Statistical Machine Learning
+            </p>
+            <div>
+                <h4 style="float:left;">Savitribai Phule Pune University<br />Bachelor of Engineering in Production Engineering</h4>
+                <h4 style="float:right;">June 2013 - June 2019</h4>
+            </div>
+            <p style="clear:both;">
+                <i><b>Relevant Coursework:</b></i> Operations Research Management, Financial Management and Cost Control, Supply Chain Management, Object Orient Programming, Numerical Techniques Optimization, Process Planning, Product Development, Marketing Management
+            </p>
+        </article>
+        <!-- Projects -->
+        <article id="projects">
+            <h2 class="major">Projects</h2>
+            <!-- Your Project Details Go Here -->
+            <div>
+                <h4 style="float:left;">Corporate Finance Wynn Resorts Valuation: A 10K Forecasting Report</h4>
+            </div>
+            <ul style="clear:both;">
+                <li>
+                    Assessed financial statements of Wynn Resorts with pivot tables, VLOOKUP, macros for data management and automation. Performed 10+ ratio analysis covering liquidity, profitability, efficiency, and solvency.
+                </li>
+                <li>
+                    Constructed 5+ financial models, like DCF and WACC on historical data, key performance indicators (KPIs), and time series forecasting assessing financial health and determined 20% undervaluation, offering investment recommendations for investors.
+                </li>
+            </ul>
+            <div>
+                <h4 style="float:left;">Asset Management of 1-million-dollar Fund</h4>
+            </div>
+            <ul style="clear:both;">
+                <li>
+                    Engaged in Equities and Derivatives Market, trading strategies virtually as a tech-focused fund, mirroring Goldman Sachs VIP basket with 10% cash reserves and 20% hedging, in challenging market conditions.
+                </li>
+                <li>
+                    Accomplished 14.16% maximizing returns, outperforming twice of global market's 6% upswing with covered risk reversal Investment strategies and risk management.
+                </li>
+            </ul>
+            <div>
+                <h4 style="float:left;">Portfolio Analysis utilizing Financial Technology</h4>
+            </div>
+            <ul style="clear:both;">
+                <li>
+                    Developed portfolio optimization framework in various asset class with Python’s Quantstats library in Jupyter Notebook to guide data-driven investment decisions through comprehensive risk and return analysis for Stakeholders.
+                </li>
+                <li>
+                    Implemented mean-variance and minimum risk models to optimize asset allocation, increasing returns by 21.45% over benchmark index S&P 500 Exchange Traded Fund while reducing risk exposure.
+                </li>
+            </ul>
+            <div>
+                <h4 style="float-left;">Analysis and Data Visualization of NASDAQ S&P 500</h4>
+            </div>
+            <ul style="clear:both;">
+                <li>
+                    Leveraged R programming to clean, process and merge data set of 80000+ records, resulting in 97% data accuracy.
+                </li>
+                <li>
+                    Employed 'ggplot2' in R and Tableau to design compelling interactive visuals, charts, stories, and dashboards.
+                </li>
+                <li>
+                    Reviewed market patterns buying/selling market trends and 10 parameters for insights in market movement over time.
+                </li>
+            </ul>
+        </article>
+        <!-- Contact -->
+        <article id="contact">
+            <h2 class="major">Contact</h2>
+            <form method="post" action="#">
+                <div class="fields">
+                    <div class="field half">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="field half">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" />
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="4"></textarea>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" class="primary" /></li>
+                    <li><input type="reset" value="Reset" /></li>
+                </ul>
+            </form>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/sourabhpandav/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/sourabh-pandav" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </article>
+    </div>
+</div>
+<!-- Scripts -->
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    // Typing effect for your name
+    var name = "Sourabh Pandav";
+    var nameIndex = 0;
+    var nameInterval = setInterval(function () {
+        if (nameIndex < name.length) {
+            document.getElementById("name-typing").textContent += name[nameIndex];
+            nameIndex++;
+        } else {
+            clearInterval(nameInterval);
+        }
+    }, 100);
 
-    						    @keyframes rotate {
-        						0% {
-            						transform: scaleX(-1) rotate(0deg);
-        						}
-        						100% {
-            						transform: scaleX(-1) rotate(-360deg);
-        					     	}
-    						    }
-						</style>
-
-						<div class="content">
-							<div class="inner">
-								<h1>Sourabh Pandav</h1>
-								<p>Quantitative Research | Financial Analytics | Asset Management | Data Visualization | Risk Management | Financial Modelling </p>
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/sourabhpandav/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/sourabh-pandav" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#about">Edu</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Introduction</h2>
-								<p>I am an analytical professional with a finance background, specializing in financial analytics. My goal is to excel in the Financial Services and Investment Management sector as a dedicated Financial Analyst. I have a passion for simplifying complex technical concepts and conveying them to a non-technical audience. My expertise lies in analyzing company performance through techniques like Ratio Analysis, Statistical Modeling, and Quantitative Finance.</a></p>
-								<p>I bring hands-on experience in addressing various challenges in financial modeling, and I have a background in strategic planning, financial analysis, financial modeling, forecasting, and budgeting for operational efficiency. I am well-versed in advanced analytical tools, including statistical analysis, data visualization, and database management, ensuring regulatory compliance.</p>
-								<p>My interests span across traveling, cricket, and Progressive Pop music. Continuous learning is a source of immense pleasure for me, and I am committed to enhancing my quantitative and computational skills.</p>
-								<p>I am currently seeking opportunities for personal and organizational growth in the financial domain.</p>
-								
-							</article>
-
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<div>
-									<h4 style="float:left">Financial Data Analyst - Research Assistantship<br />Stevens Institute of Technology</h4>
-									<h4 style="float:right">May 2022 - May 2023</h4>
-								</div>
-								<ul style="clear:both;">
-									<li>
-										Collected financial data from Bloomberg Terminal, tracking insider holdings and transactions of 50,000+ investors, for endowment fund strategies evaluating 3,000 US-listed companies' equity holdings, for informed investment decisions.
-									</li>
-									<li>
-										Led a 30-member team in market trend research, analyzing GDP, CPI, and key economic indicators. Leveraged Python and Power BI for risk assessments through scenario analysis, achieving a 20% increase in efficiency.
-									</li>
-									<li>
-										Spearheaded statistical analysis, uncovering correlations between revenue trends, expense forecasting, and cost overruns. Used multi-variable regression models in Excel, resulting in a notable 10% forecasting accuracy improvement.
-									</li>
-								</ul>
-								<div>
-									<h4 style="float:left">Operations Analyst<br />Paytaan Retail & Wholesale Pvt. Ltd</h4>
-									<h4 style="float:right">June 2019 - July 2021</h4>
-								</div>
-								<ul style="clear:both;">
-									<li>
-										Executed strategic planning to optimize logistics, pricing strategies, transactions and streamlined stock ordering processes resulting in 20% revenue increase and 30% reduction in stock shortages.
-									</li>
-									<li>
-										Conducted accounting audits on Zoho Books ERP inventory systems to achieve a 20% reduction in errors, increasing accuracy in financial planning, resulting in cost benefits and process improvement by mitigating stockouts and returns.
-									</li>
-									<li>
-										Improved cross-functional stock and business processes recommendations, realizing a 15% efficiency boost through strategic deadstock sales and resource allocation optimization with SQL.
-									</li>
-									<li>
-										Coordinated daily with 10+ vendors for on-time delivery of specified compliance products, increasing scalability.
-									</li>
-								</ul>
-							</ul>
-							<div>
-							
-							
-							
-						</article>
-
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">Education</h2>
-								<div>
-									<h4 style="float:left;">Stevens Institute of Technology<br />Master of Science in Finance (Financial Services Analytics)</h4>
-									<h4 style="float:right;">August 2021 - May 2023</h4>
-								</div>
-								<p style="clear:both;">
-									<i><b>Relevant Coursework:</b></i> Financial Statement Analysis, Mergers Acquisitions, Corporate Restructuring, Econometrics, Corporate Finance, Fixed Income, Investment Management, Derivatives, Investment Banking, Financial Technology, Statistical Machine Learning</p>
-								<div>
-									<h4 style="float:left;">Savitribai Phule Pune University<br />Bachelor of Engineering in Production Engineering</h4>
-									<h4 style="float:right;">June 2013 - June 2019</h4>
-								</div>
-								<p style="clear:both;">
-									<i><b>Relevant Coursework:</b></i> Operations Research Management, Financial Management and Cost Control, Supply Chain Management, Object Orient Programming, Numerical Techniques Optimization, Process Planning, Product Development, Marketing Management</p>
-							</article>
-
-						<!-- Projects -->
-				<article id="projects">
-					<h2 class="major">Projects</h2>
-					<!-- Your Project Details Go Here -->
-					<div>
-						<h4 style="float:left;">Corporate Finance Wynn Resorts Valuation: A 10K Forecasting Report</h4>
-					</div>
-					<ul style="clear:both;">
-						<li>
-						Assessed financial statements of Wynn Resorts with pivot tables, VLOOKUP, macros for data management and automation. Performed 10+ ratio analysis covering liquidity, profitability, efficiency, and solvency. </li>
-						<li>
-						Constructed 5+ financial models, like DCF and WACC on historical data, key performance indicators (KPIs), and time series forecasting assessing financial health and determined 20% undervaluation, offering investment recommendations for investors. </li>
-					</ul>
-					<div>
-						<h4 style="float:left;">Asset Management of 1-million-dollar Fund</h4>
-					</div>
-					<ul style="clear:both;">
-						<li>
-						Engaged in Equities and Derivatives Market, trading strategies virtually as a tech-focused fund, mirroring Goldman Sachs VIP basket with 10% cash reserves and 20% hedging, in challenging market conditions.</li>
-						<li>
-						Accomplished 14.16% maximizing returns, outperforming twice of global market's 6% upswing with covered risk reversal Investment strategies and risk management. </li>
-					</ul>
-					<div>
-						<h4 style="float:left;">Portfolio Analysis utilizing Financial Technology</h4>
-					</div>
-					<ul style="clear:both;">
-						<li>
-						Developed portfolio optimization framework in various asset class with Python’s Quantstats library in Jupyter Notebook to guide data-driven investment decisions through comprehensive risk and return analysis for Stakeholders.</li>
-						<li>
-						Implemented mean-variance and minimum risk models to optimize asset allocation, increasing returns by 21.45% over benchmark index S&P 500 Exchange Traded Fund while reducing risk exposure. </li>
-					</ul>
-					<div>
-						<h4 style="float:left;">Analysis and Data Visualization of NASDAQ S&P 500</h4>
-					</div>
-					<ul style="clear:both;">
-						<li>
-						Leveraged R programming to clean, process and merge data set of 80000+ records, resulting in 97% data accuracy.</li>
-						<li>
-						Employed 'ggplot2' in R and Tableau to design compelling interactive visuals, charts, stories, and dashboards. </li>
-						<li>
-						Reviewed market patterns buying/selling market trends and 10 parameters for insights in market movement over time. </li>
-					</ul>
-					<div>
-				</article>
-
-				<!-- Contact -->
-				<article id="contact">
-					<h2 class="major">Contact</h2>
-					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half">
-								<label for="name">Name</label>
-								<input type="text" name="name" id="name" />
-							</div>
-							<div class="field half">
-								<label for="email">Email</label>
-								<input type="text" name="email" id="email" />
-							</div>
-							<div class="field">
-								<label for="message">Message</label>
-								<textarea name="message" id="message" rows="4"></textarea>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="primary" /></li>
-							<li><input type="reset" value="Reset" /></li>
-						</ul>
-					</form>
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/sourabhpandav/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/sourabh-pandav" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-				</article>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/particles.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+    // Typing effect for your description
+    var typedText = "Quantitative Research | Financial Analytics | Asset Management | Data Visualization | Risk Management | Financial Modelling";
+    var typedIndex = 0;
+    var textInterval = setInterval(function () {
+        if (typedIndex < typedText.length) {
+            document.getElementById("typing-text").textContent += typedText[typedIndex];
+            typedIndex++;
+        } else {
+            clearInterval(textInterval);
+        }
+    }, 100);
+</script>
+</body>
 </html>
