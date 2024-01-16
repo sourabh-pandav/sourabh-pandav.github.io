@@ -1,10 +1,9 @@
-
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
 <head>
+    <title>Sourabh Pandav</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>Sourabh Pandav</title>
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <meta name="description" content="Personal Portfolio" />
@@ -13,21 +12,24 @@
     <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51835372328_6a9e4e82b4_.jpg" />
     <meta name="description" property="og:description" content="Personal Portfolio" />
     <meta name="author" content="Sourabh Pandav" />
-    <style>
-        /* Add your CSS styles here */
-        body {
-            background: radial-gradient(circle, #0A0A2A, #2A0A3A, #0A2A3A);
-            color: #FFFFFF;
-            font-family: Arial, sans-serif;
-        }
+</head>
+<style>
+    body {
+        background: radial-gradient(circle, #0A0A2A, #2A0A3A, #0A2A3A);
+        color: #FFFFFF;
+        font-family: Arial, sans-serif;
+    }
 
-        h1, p, button {
-            color: #FFFFFF;
-        }
+    h1, p, button {
+        color: #FFFFFF;
+    }
 
-        button {
-            background-color: #37006E;
-            border: 1px solid #C684FF;
+    button {
+        background-color: #37006E;
+        border: 1px solid #C684FF;
+
+
+        #name-typing {
             font-size: 36px;
             font-weight: bold;
             font-family: Arial, sans-serif;
@@ -48,54 +50,66 @@
                 background-color: transparent;
             }
         }
+         #wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+</style>
+<body class="is-preload"></body>
+<!-- Wrapper -->
+<div id="wrapper">
+    <div id="particles-js" style="height:100%; width:100%; position:absolute"></div>
+    <!-- Header -->
+    <header id="header">
+        <div class="logo" style="font-size: 40px;;">
+            <span class="fas fa-wave-square"></span>
+        </div>
+        <style>
+            .logo {
+                font-size: 40px;
+                transform: scaleX(-1) rotate(0deg);
+                animation: rotate 4s linear infinite;
+            }
 
-        #wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+            @keyframes rotate {
+                0% {
+                    transform: scaleX(-1) rotate(0deg);
+                }
 
-        /* Add more styles as needed */
-    </style>
-</head>
-<body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper">
-        <div id="particles-js" style="height:100%; width:100%; position:absolute"></div>
-        <!-- Header -->
-        <header id="header">
-            <div class="logo" style="font-size: 40px;">
-                <span class="fas fa-wave-square"></span>
-            </div>
-            <!-- Add more header styles if needed -->
-            <div class="content">
-                <div class="inner">
-                    <h1>Sourabh Pandav</h1>
-                    <p><span id="typing-text"></span><span class="typing-cursor"></span></p>
-                    <ul class="icons">
-                        <li><a href="https://www.linkedin.com/in/sourabhpandav/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                        <li><a href="https://github.com/sourabh-pandav" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                    </ul>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#intro">Intro</a></li>
-                    <li><a href="#about">Edu</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                100% {
+                    transform: scaleX(-1) rotate(-360deg);
+                }
+            }
+        </style>
+        <div class="content">
+            <div class="inner">
+                <h1>Sourabh Pandav</h1>
+                <p><span id="typing-text"></span></p>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/sourabhpandav/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/sourabh-pandav" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
                 </ul>
-            </nav>
-        </header>
-        <!-- Main -->
-        <div id="main">
-            <!-- Intro -->
-            <article id="intro">
-                <h2 class="major">Introduction</h2>
-
+            </div>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#about">Edu</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!--<li><a href="#elements">Elements</a></li>-->
+            </ul>
+        </nav>
+    </header>
+    <!-- Main -->
+    <div id="main">
+        <!-- Intro -->
+        <article id="intro">
+            <h2 class="major">Introduction</h2>
             <p>
                 I am a seasoned finance professional with a proven track record, specializing in financial analytics. My mission is to make a substantial impact in the Financial Services and Investment Management sector as a dedicated Analyst at BlackRock.
             </p>
@@ -108,12 +122,10 @@
             <p>
                 Outside the professional realm, my interests encompass off-cliff traveling, F1 racing, and a love for Progressive Pop music. I am deeply committed to continuous learning and consistently strive to enhance my quantitative and computational skills.
             </p>
-                
-            </article>
-            <!-- About -->
-            <article id="about">
-                <h2 class="major">Education</h2>
-                
+        </article>
+        <!-- About -->
+        <article id="about">
+            <h2 class="major">Education</h2>
             <div>
                 <h4 style="float:left;">Stevens Institute of Technology<br />Master of Science in Finance (Financial Services Analytics)</h4>
                 <h4 style="float:right;">August 2021 - May 2023</h4>
@@ -127,11 +139,10 @@
             </div>
             <p style="clear:both;">
                 <i><b>Relevant Coursework:</b></i> Operations Research Management, Financial Management and Cost Control, Supply Chain Management, Object Orient Programming, Numerical Techniques Optimization, Process Planning, Product Development, Marketing Management
-            </p>   
-                
-            </article>
-            <!-- Work -->
-             <article id="work">
+            </p>
+        </article>
+        <!-- Work -->
+        <article id="work">
             <h2 class="major">Work</h2>
             <div>
                 
@@ -190,52 +201,62 @@
                 </li>
             </ul>
      
-                
-            </article>
-            <!-- Projects -->
-            <article id="projects">
-                <h2 class="major">Projects</h2>
-               
-                <div class="project-entry">
-        <h4>Corporate Finance Wynn Resorts Valuation: A 10K Forecasting Report</h4>
-        <ul>
-            <li>Assessed financial statements of Wynn Resorts with pivot tables, VLOOKUP, macros for data management and automation. Performed 10+ ratio analysis covering liquidity, profitability, efficiency, and solvency.</li>
-            <li>Constructed 5+ financial models, like DCF and WACC on historical data, key performance indicators (KPIs), and time series forecasting assessing financial health and determined 20% undervaluation, offering investment recommendations for investors.</li>
-        </ul>
-    </div>
-
-    <div class="project-entry">
-        <h4>Asset Management of 1-million-dollar Fund</h4>
-        <ul>
-            <li>Engaged in Equities and Derivatives Market, trading strategies virtually as a tech-focused fund, mirroring Goldman Sachs VIP basket with 10% cash reserves and 20% hedging, in challenging market conditions.</li>
-            <li>Accomplished 14.16% maximizing returns, outperforming twice of global market's 6% upswing with covered risk reversal Investment strategies and risk management.</li>
-        </ul>
-    </div>
-
-    <div class="project-entry">
-        <h4>Portfolio Analysis utilizing Financial Technology</h4>
-        <ul>
-            <li>Developed portfolio optimization framework in various asset class with Python’s Quantstats library in Jupyter Notebook to guide data-driven investment decisions through comprehensive risk and return analysis for Stakeholders.</li>
-            <li>Implemented mean-variance and minimum risk models to optimize asset allocation, increasing returns by 21.45% over benchmark index S&P 500 Exchange Traded Fund while reducing risk exposure.</li>
-        </ul>
-    </div>
-
-    <div class="project-entry">
-        <h4>Analysis and Data Visualization of NASDAQ S&P 500</h4>
-        <ul>
-            <li>Leveraged R programming to clean, process and merge data set of 80000+ records, resulting in 97% data accuracy.</li>
-            <li>Employed 'ggplot2' in R and Tableau to design compelling interactive visuals, charts, stories, and dashboards.</li>
-            <li>Reviewed market patterns buying/selling market trends and 10 parameters for insights in market movement over time.</li>
-        </ul>
-    </div>
-
-                
-            </article>
-            <!-- Contact -->
-            <article id="contact">
-                <h2 class="major">Contact</h2>
-                
-              <form method="post" action="#">
+        <!-- Projects -->
+        <article id="projects">
+            <h2 class="major">Projects</h2>
+            <!-- Your Project Details Go Here -->
+            <div>
+                <h4 style="float:left;">Corporate Finance Wynn Resorts Valuation: A 10K Forecasting Report</h4>
+            </div>
+            <ul style="clear:both;">
+                <li>
+                    Assessed financial statements of Wynn Resorts with pivot tables, VLOOKUP, macros for data management and automation. Performed 10+ ratio analysis covering liquidity, profitability, efficiency, and solvency.
+                </li>
+                <li>
+                    Constructed 5+ financial models, like DCF and WACC on historical data, key performance indicators (KPIs), and time series forecasting assessing financial health and determined 20% undervaluation, offering investment recommendations for investors.
+                </li>
+            </ul>
+            <div>
+                <h4 style="float:left;">Asset Management of 1-million-dollar Fund</h4>
+            </div>
+            <ul style="clear:both;">
+                <li>
+                    Engaged in Equities and Derivatives Market, trading strategies virtually as a tech-focused fund, mirroring Goldman Sachs VIP basket with 10% cash reserves and 20% hedging, in challenging market conditions.
+                </li>
+                <li>
+                    Accomplished 14.16% maximizing returns, outperforming twice of global market's 6% upswing with covered risk reversal Investment strategies and risk management.
+                </li>
+            </ul>
+            <div>
+                <h4 style="float:left;">Portfolio Analysis utilizing Financial Technology</h4>
+            </div>
+            <ul style="clear:both;">
+                <li>
+                    Developed portfolio optimization framework in various asset class with Python’s Quantstats library in Jupyter Notebook to guide data-driven investment decisions through comprehensive risk and return analysis for Stakeholders.
+                </li>
+                <li>
+                    Implemented mean-variance and minimum risk models to optimize asset allocation, increasing returns by 21.45% over benchmark index S&P 500 Exchange Traded Fund while reducing risk exposure.
+                </li>
+            </ul>
+            <div>
+                <h4 style="float-left;">Analysis and Data Visualization of NASDAQ S&P 500</h4>
+            </div>
+            <ul style="clear:both;">
+                <li>
+                    Leveraged R programming to clean, process and merge data set of 80000+ records, resulting in 97% data accuracy.
+                </li>
+                <li>
+                    Employed 'ggplot2' in R and Tableau to design compelling interactive visuals, charts, stories, and dashboards.
+                </li>
+                <li>
+                    Reviewed market patterns buying/selling market trends and 10 parameters for insights in market movement over time.
+                </li>
+            </ul>
+        </article>
+        <!-- Contact -->
+        <article id="contact">
+            <h2 class="major">Contact</h2>
+            <form method="post" action="#">
                 <div class="fields">
                     <div class="field half">
                         <label for="name">Name</label>
@@ -259,29 +280,30 @@
                 <li><a href="https://www.linkedin.com/in/sourabhpandav/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
                 <li><a href="https://github.com/sourabh-pandav" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
             </ul>
-                
-            </article>
-        </div>
+        </article>
     </div>
-    <!-- Scripts -->
-    <script src="assets/js/particles.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-        // Typing effect script
-        var typedText = "Quantitative Research | Financial Analytics | Asset Management | Data Visualization | Risk Management | Financial Modelling";
-        var typedIndex = 0;
-        var textInterval = setInterval(function () {
-            if (typedIndex < typedText.length) {
-                document.getElementById("typing-text").textContent += typedText[typedIndex];
-                typedIndex++;
-            } else {
-                clearInterval(textInterval);
-            }
-        }, 100);
-    </script>
+</div>
+<!-- Scripts -->
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    
+
+    // Typing effect for your description
+    var typedText = "Quantitative Research | Financial Analytics | Asset Management | Data Visualization | Risk Management | Financial Modelling";
+    var typedIndex = 0;
+    var textInterval = setInterval(function () {
+        if (typedIndex < typedText.length) {
+            document.getElementById("typing-text").textContent += typedText[typedIndex];
+            typedIndex++;
+        } else {
+            clearInterval(textInterval);
+        }
+    }, 100);
+</script>
 </body>
 </html>
