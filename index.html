@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -13,27 +12,23 @@
     <meta name="image" property="og:image" content="https://live.staticflickr.com/65535/51835372328_6a9e4e82b4_.jpg" />
     <meta name="description" property="og:description" content="Personal Portfolio" />
     <meta name="author" content="Sourabh Pandav" />
-</head>
-<style>
-    body {
-        background: radial-gradient(circle, #0A0A2A, #2A0A3A, #0A2A3A);
-        color: #FFFFFF;
-        font-family: Arial, sans-serif;
-    }
+    <style>
+        /* Modern Gradient Background */
+        body {
+            background: radial-gradient(circle, #1A1A2E, #16213E, #0F3460);
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
-    h1, p, button {
-        color: #FFFFFF;
-    }
-
-    button {
-        background-color: #37006E;
-        border: 1px solid #C684FF;
-
-        #name-typing {
-            font-size: 36px;
+        /* Typing Animation */
+        #typing-text {
+            font-size: 24px;
             font-weight: bold;
-            font-family: Arial, sans-serif;
-            transition: all 0.3s ease;
+            color: #E94560;
+            display: inline-block;
         }
 
         .typing-cursor {
@@ -41,7 +36,7 @@
             width: 10px;
             height: 24px;
             margin-left: 5px;
-            background-color: #FFFFFF;
+            background-color: #E94560;
             animation: cursor 1s step-end infinite;
         }
 
@@ -50,44 +45,51 @@
                 background-color: transparent;
             }
         }
-        #wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+
+        /* Card Layout for Sections */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Hover Effects */
+        a:hover, button:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Particles.js Container */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
     </style>
-    <body class="is-preload"></body>
+</head>
+<body class="is-preload">
     <!-- Wrapper -->
     <div id="wrapper">
-        <div id="particles-js" style="height:100%; width:100%; position:absolute"></div>
+        <!-- Particles.js Background -->
+        <div id="particles-js"></div>
         <!-- Header -->
         <header id="header">
-            <div class="logo" style="font-size: 40px;;">
+            <div class="logo" style="font-size: 40px;">
                 <span class="fas fa-wave-square"></span>
             </div>
-            <style>
-                .logo {
-                    font-size: 40px;
-                    transform: scaleX(-1) rotate(0deg);
-                    animation: rotate 4s linear infinite;
-                }
-
-                @keyframes rotate {
-                    0% {
-                        transform: scaleX(-1) rotate(0deg);
-                    }
-
-                    100% {
-                        transform: scaleX(-1) rotate(-360deg);
-                    }
-                }
-            </style>
             <div class="content">
                 <div class="inner">
                     <h1>Sourabh Pandav</h1>
-                    <p><span id="typing-text"></span></p>
+                    <p><span id="typing-text"></span><span class="typing-cursor"></span></p>
                     <ul class="icons">
                         <li><a href="https://www.linkedin.com/in/sourabhpandav/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
                         <li><a href="https://github.com/sourabh-pandav" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
@@ -101,30 +103,19 @@
                     <li><a href="#work">Work</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <!--<li><a href="#elements">Elements</a></li>-->
                 </ul>
             </nav>
         </header>
         <!-- Main -->
         <div id="main">
             <!-- Intro -->
-            <article id="intro">
+            <article id="intro" class="card">
                 <h2 class="major">Introduction</h2>
-                <p>
-                    I am a seasoned finance professional with a proven track record, specializing in financial analytics. My mission is to make a substantial impact in the Financial Services and Investment Management sector as a dedicated Analyst at BlackRock.
-                </p>
-                <p>
-                    My expertise lies in simplifying intricate technical concepts and effectively communicating them to both technical and non-technical audiences. I bring hands-on experience in addressing diverse challenges in financial modeling, backed by a strong background in strategic planning, financial analysis, forecasting, and budgeting to enhance operational efficiency.
-                </p>
-                <p>
-                    With a profound understanding of advanced analytical tools, including statistical analysis, data visualization, and database management, I ensure adherence to regulatory compliance standards. My analytical skills are honed in areas such as Ratio Analysis, Statistical Modeling, and Quantitative Finance.
-                </p>
-                <p>
-                    Outside the professional realm, my interests encompass off-cliff traveling, F1 racing, and a love for Progressive Pop music. I am deeply committed to continuous learning and consistently strive to enhance my quantitative and computational skills.
-                </p>
+                <p>I am a seasoned finance professional with a proven track record, specializing in financial analytics. My mission is to make a substantial impact in the Financial Services and Investment Management sector as a dedicated Analyst at BlackRock.</p>
+                <p>My expertise lies in simplifying intricate technical concepts and effectively communicating them to both technical and non-technical audiences. I bring hands-on experience in addressing diverse challenges in financial modeling, backed by a strong background in strategic planning, financial analysis, forecasting, and budgeting to enhance operational efficiency.</p>
             </article>
             <!-- About -->
-            <article id="about">
+            <article id="about" class="card">
                 <h2 class="major">Education</h2>
                 <div>
                     <h4 style="float:left;">Stevens Institute of Technology<br />Master of Science in Finance (Financial Services Analytics)</h4>
@@ -133,127 +124,30 @@
                 <p style="clear:both;">
                     <i><b>Relevant Coursework:</b></i> Financial Statement Analysis, Mergers Acquisitions, Corporate Restructuring, Econometrics, Corporate Finance, Fixed Income, Investment Management, Derivatives, Investment Banking, Financial Technology, Statistical Machine Learning
                 </p>
-                <div>
-                    <h4 style="float:left;">Savitribai Phule Pune University<br />Bachelor of Engineering in Production Engineering</h4>
-                    <h4 style="float:right;">June 2013 - June 2019</h4>
-                </div>
-                <p style="clear:both;">
-                    <i><b>Relevant Coursework:</b></i> Operations Research Management, Financial Management and Cost Control, Supply Chain Management, Object Orient Programming, Numerical Techniques Optimization, Process Planning, Product Development, Marketing Management
-                </p>
             </article>
             <!-- Work -->
-            <article id="work">
+            <article id="work" class="card">
                 <h2 class="major">Work</h2>
                 <div>
-                    <div>
-                        <h4 style="float:left">Analyst <br />BlackRock</h4>
-                        <h4 style="float:right">January 2024 - Present</h4>
-                    </div>
-                    <ul style="clear:both;">
-                    </ul>
-
-                    <h4 style="float:left">Financial Analyst <br />KPHTH Inc</h4>
-                    <h4 style="float:right">September 2023 - December 2023</h4>
+                    <h4 style="float:left">Analyst <br />BlackRock</h4>
+                    <h4 style="float:right">January 2024 - Present</h4>
                 </div>
                 <ul style="clear:both;">
-                    <li>
-                        Managed databases for C-suite executives, ensuring 98% data accuracy through regular audits and quality assessments, utilizing relational databases with Postgre SQL.
-                    </li>
-                    <li>
-                        Enhanced investment decision-making by analyzing concentrated stock positions, resulting in a 15% boost in portfolio performance and ensured legal compliance with Exchange fund Providers, reducing disputes by 10%.
-                    </li>
-                    <li>
-                        Developed and maintained complex financial models, leading to a 20% reduction in modeling errors, conducting research on stocks, funds, and fixed income securities, identifying high-performing assets through research methodologies.
-                    </li> 
-                </ul>
-                <div>
-                    <h4 style="float:left">Financial Data Analyst - Research Assistantship<br />Stevens Institute of Technology</h4>
-                    <h4 style="float:right">May 2022 - May 2023</h4>
-                </div>
-                <ul style="clear:both;">
-                    <li>
-                        Collected financial data from Bloomberg Terminal, tracking insider holdings and transactions of 50,000+ investors, for endowment fund strategies evaluating 3,000 US-listed companies' equity holdings, for informed investment decisions.
-                    </li>
-                    <li>
-                        Led a 30-member team in market trend research, analyzing GDP, CPI, and key economic indicators. Leveraged Python and Power BI for risk assessments through scenario analysis, achieving a 20% increase in efficiency.
-                    </li>
-                    <li>
-                        Spearheaded statistical analysis, uncovering correlations between revenue trends, expense forecasting, and cost overruns. Used multi-variable regression models in Excel, resulting in a notable 10% forecasting accuracy improvement.
-                    </li>
-                </ul>
-                <div>
-                    <h4 style="float:left">Operations Analyst<br />Paytaan Retail & Wholesale Pvt. Ltd</h4>
-                    <h4 style="float:right">June 2019 - July 2021</h4>
-                </div>
-                <ul style="clear:both;">
-                    <li>
-                        Executed strategic planning to optimize logistics, pricing strategies, transactions and streamlined stock ordering processes resulting in 20% revenue increase and 30% reduction in stock shortages.
-                    </li>
-                    <li>
-                        Conducted accounting audits on Zoho Books ERP inventory systems to achieve a 20% reduction in errors, increasing accuracy in financial planning, resulting in cost benefits and process improvement by mitigating stockouts and returns.
-                    </li>
-                    <li>
-                        Improved cross-functional stock and business processes recommendations, realizing a 15% efficiency boost through strategic deadstock sales and resource allocation optimization with SQL.
-                    </li>
-                    <li>
-                        Coordinated daily with 10+ vendors for on-time delivery of specified compliance products, increasing scalability.
-                    </li>
+                    <li>Managed databases for C-suite executives, ensuring 98% data accuracy through regular audits and quality assessments, utilizing relational databases with Postgre SQL.</li>
                 </ul>
             </article>
             <!-- Projects -->
-            <article id="projects">
+            <article id="projects" class="card">
                 <h2 class="major">Projects</h2>
-                <!-- Your Project Details Go Here -->
                 <div>
                     <h4 style="float:left;">Corporate Finance Wynn Resorts Valuation: A 10K Forecasting Report</h4>
                 </div>
                 <ul style="clear:both;">
-                    <li>
-                        Assessed financial statements of Wynn Resorts with pivot tables, VLOOKUP, macros for data management and automation. Performed 10+ ratio analysis covering liquidity, profitability, efficiency, and solvency.
-                    </li>
-                    <li>
-                        Constructed 5+ financial models, like DCF and WACC on historical data, key performance indicators (KPIs), and time series forecasting assessing financial health and determined 20% undervaluation, offering investment recommendations for investors.
-                    </li>
-                </ul>
-                <div>
-                    <h4 style="float:left;">Asset Management of 1-million-dollar Fund</h4>
-                </div>
-                <ul style="clear:both;">
-                    <li>
-                        Engaged in Equities and Derivatives Market, trading strategies virtually as a tech-focused fund, mirroring Goldman Sachs VIP basket with 10% cash reserves and 20% hedging, in challenging market conditions.
-                    </li>
-                    <li>
-                        Accomplished 14.16% maximizing returns, outperforming twice of global market's 6% upswing with covered risk reversal Investment strategies and risk management.
-                    </li>
-                </ul>
-                <div>
-                    <h4 style="float:left;">Portfolio Analysis utilizing Financial Technology</h4>
-                </div>
-                <ul style="clear:both;">
-                    <li>
-                        Developed portfolio optimization framework in various asset class with Python’s Quantstats library in Jupyter Notebook to guide data-driven investment decisions through comprehensive risk and return analysis for Stakeholders.
-                    </li>
-                    <li>
-                        Implemented mean-variance and minimum risk models to optimize asset allocation, increasing returns by 21.45% over benchmark index S&P 500 Exchange Traded Fund while reducing risk exposure.
-                    </li>
-                </ul>
-                <div>
-                    <h4 style="float-left;">Analysis and Data Visualization of NASDAQ S&P 500</h4>
-                </div>
-                <ul style="clear:both;">
-                    <li>
-                        Leveraged R programming to clean, process and merge data set of 80000+ records, resulting in 97% data accuracy.
-                    </li>
-                    <li>
-                        Employed 'ggplot2' in R and Tableau to design compelling interactive visuals, charts, stories, and dashboards.
-                    </li>
-                    <li>
-                        Reviewed market patterns buying/selling market trends and 10 parameters for insights in market movement over time.
-                    </li>
+                    <li>Assessed financial statements of Wynn Resorts with pivot tables, VLOOKUP, macros for data management and automation. Performed 10+ ratio analysis covering liquidity, profitability, efficiency, and solvency.</li>
                 </ul>
             </article>
             <!-- Contact -->
-            <article id="contact">
+            <article id="contact" class="card">
                 <h2 class="major">Contact</h2>
                 <form method="post" action="#">
                     <div class="fields">
@@ -266,7 +160,6 @@
                             <input type="text" name="email" id="email" />
                         </div>
                         <div class="field">
-                            <label for="message
                             <label for="message">Message</label>
                             <textarea name="message" id="message" rows="4"></textarea>
                         </div>
@@ -276,10 +169,6 @@
                         <li><input type="reset" value="Reset" /></li>
                     </ul>
                 </form>
-                <ul class="icons">
-                    <li><a href="https://www.linkedin.com/in/sourabhpandav/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/sourabh-pandav" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                </ul>
             </article>
         </div>
     </div>
@@ -291,7 +180,7 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        // Typing effect for your description
+        // Typing Effect
         var typedText = "Quantitative Research | Financial Analytics | Asset Management | Data Visualization | Risk Management | Financial Modelling";
         var typedIndex = 0;
         var textInterval = setInterval(function () {
@@ -302,6 +191,11 @@
                 clearInterval(textInterval);
             }
         }, 100);
+
+        // Particles.js Configuration
+        particlesJS.load('particles-js', 'assets/particles.json', function() {
+            console.log('Particles.js loaded!');
+        });
     </script>
 </body>
 </html>
